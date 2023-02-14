@@ -1,0 +1,20 @@
+{
+    "name": "mikhail-mouner/generate-filter",
+    "description": "This package is a useful tool to generate filter files",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "MikhailMouner\\GenerateFilter\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mikhail-Mouner",
+            "email": "mikhaeelmouner@yahoo.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0"
+    }
+}
