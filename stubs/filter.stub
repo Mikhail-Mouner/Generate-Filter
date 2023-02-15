@@ -1,0 +1,14 @@
+<?php
+
+namespace App\Http\Filters\$MODEL_NAME$;
+
+use Illuminate\Database\Eloquent\Builder;
+use MikhailMouner\GenerateFilter\Container\AbstractFilter;
+
+class $FILTER_NAME$ extends AbstractFilter
+{
+    protected function applyFilter(Builder $builder): Builder
+    {
+        return $builder->where('$COLUMN_NAME$',$this->filterValue());
+    }
+}

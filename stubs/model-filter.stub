@@ -1,0 +1,28 @@
+<?php
+
+namespace App\Http\Filters\$MODEL_NAME$;
+
+use App\Models\$MODEL_NAME$;
+use MikhailMouner\GenerateFilter\Container\HandlePipelines;
+
+class $MODEL_NAME$Filter extends HandlePipelines
+{
+
+    public static function apply()
+    {
+        return (new self)->execute();
+    }
+
+    public function setupModelQuery()
+    {
+        $this->model_query = $MODEL_NAME$::query();
+    }
+
+    public function addPipelines()
+    {
+        $this->pipelines = [
+            //put here your filters
+            $FILTER_NAME$::class
+        ];
+    }
+}
